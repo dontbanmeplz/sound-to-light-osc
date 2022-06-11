@@ -242,13 +242,15 @@ class AudioAnalyzer:
         return data[abs(data - numpy.mean(data)) < m * numpy.std(data)]
 
     def detect_new_song(self):
-        print("Detected: New song")
-        self.reset_tracking()
-        self.callback_new_song()
+        pass
+    #    print("Detected: New song")
+    #    self.reset_tracking()
+    #    self.callback_new_song()
 
     def detect_pause(self):
-        print("Detected: Pause")
-        self.callback_pause()
+        pass
+    #    print("Detected: Pause")
+    #    self.callback_pause()
 
     def detect_intensity_changed(self, intensity):
         print("New intensity: {:d}".format(intensity))
